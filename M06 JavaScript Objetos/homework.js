@@ -158,7 +158,7 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
 
    }
  return objetoProducto 
-
+ 
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/

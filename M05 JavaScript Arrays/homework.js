@@ -211,18 +211,15 @@ function breakStatement(num) {
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
     var lista = []; 
-    var n = 0;
     for ( i=0; i<10; i++) {
-      if ( n === i ) { 
-         n=i;
+      if ( num === i ) { 
          return ( "Se interrumpió la ejecución" );
          break;
-      } num +=2; 
+      } num = num + 2; 
         lista.push(num);
       }
-      if ( num === n ) {
-      return lista
-    }   
+      
+    return lista 
 }
 
 function continueStatement(num) {
@@ -232,16 +229,16 @@ function continueStatement(num) {
    // se continua con la siguiente iteración.
    // [PISTA]: utiliza el statement 'continue'.
    // Tu código:
-   if(arguments.length==0){
-      return 0;
-    }
-    let cantidad = 1;
-    for(let i = 0; i < arguments.length; i++){
-      cantidad *= arguments[i];
-    }
-    return cantidad;
-    
-  }
+   var lista = []; 
+   for ( i=0; i<10; i ++) {
+      if ( i===5 ) {
+         continue
+      }
+      num = num+2; 
+      lista.push(num); 
+   } 
+   return lista 
+}
 
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
